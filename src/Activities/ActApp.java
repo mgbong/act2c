@@ -1,4 +1,4 @@
-package actapp;
+package Activities;
 
 import java.util.Scanner;
 
