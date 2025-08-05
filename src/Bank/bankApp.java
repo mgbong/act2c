@@ -1,4 +1,4 @@
-package banking;
+package Bank;
 
 public class bankApp {
     int accountNo = 10001;

@@ -1,7 +1,7 @@
-package actapp;
+package Main;
 
 import java.util.Scanner;
-import banking.bankApp;
+import Bank.bankApp;
 
 public class mainClass {
     public static void main(String[] args) {

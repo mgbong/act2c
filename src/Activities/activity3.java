@@ -2,7 +2,7 @@ package Activities;
 
 import java.util.Scanner;
 
-public class ActApp {
+public class activity3 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
