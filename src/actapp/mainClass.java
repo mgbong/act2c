@@ -18,9 +18,11 @@ public class mainClass {
         
         switch(choice){
             case 1:
-       
                 bankApp ba = new bankApp();
+                int attempt = 0;
+                boolean success = false;
                 
+                while (attempt < 3 && !success) {
                 System.out.print("Enter your Account No: ");
                 int accountNo = sc.nextInt();
 
@@ -29,26 +31,32 @@ public class mainClass {
               
                     if(ba.verifyAccount(accountNo, pin)){
                         System.out.println("LOGIN SUCCESS");
+                        success = true;
                     }else{
+                        attempt++;
                         System.out.println("INVALID ACCOUNT!");
+                        if (attempt < 3) {
+                            System.out.println("Try again. Attempts left: " + (3 - attempt));
+                        }
                     }
-                
-                
+                }
+                if (!success) {
+                    System.out.println("Too many failed attempts. Program will now exit.");
+                    System.exit(0);
+                }    
                 break;
             case 2:
+                System.out.println("Welcome to the Doctors Appointment system.");
                 
                 break;
+
             case 3:
+                System.out.println("Welcome to the Shopping system.");
                 
                 break;
+
             default:
                 System.out.println("Invalid Selection!");
-                
-            
-                
-        
         }
-            
     }
-    
 }

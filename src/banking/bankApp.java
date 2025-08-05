@@ -5,8 +5,6 @@ public class bankApp {
     String name;
     float initialBalance = 0;
     int pin = 1234;
-    int maxAtt = 3;
-    int loginAtt = 0;
     
     public boolean verifyAccount(int acc, int pn){
         
