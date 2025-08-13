@@ -3,7 +3,7 @@ package Activities;
 import java.util.Scanner;
 
 
-public class activity1 {
+public class act4 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         
